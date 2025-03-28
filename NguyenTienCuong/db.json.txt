@@ -1,0 +1,52 @@
+{
+  "pets": [
+    {
+      "id": 1,
+      "name": "Chó Husky",
+      "description": "Thông minh, trung thành.",
+      "price": 8650000,
+      "category": "dog",
+      "image": "anh1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mèo Anh Lông Ngắn",
+      "description": "Dễ nuôi, lông mềm, hiền lành.",
+      "price": 6990000,
+      "category": "cat",
+      "image": "anh2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Chó Poodle",
+      "description": "Thông minh, dễ huấn luyện, lông xoăn màu nâu.",
+      "price": 10500000,
+      "category": "dog",
+      "image": "anh3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Mèo Cam",
+      "description": "Phá hoại, dễ thương, tai tiếng.",
+      "price": 99999,
+      "category": "cat",
+      "image": "anh4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Chó Corgi",
+      "description": "Chân ngắn đáng yêu, nhanh nhẹn, đíc to.",
+      "price": 10990000,
+      "category": "dog",
+      "image": "anh5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Mèo Tam Thể",
+      "description": "3 màu khác nhau, nghịch ngợm.",
+      "price": 1000000,
+      "category": "cat",
+      "image": "anh6.jpg"
+    }
+  ]
+}

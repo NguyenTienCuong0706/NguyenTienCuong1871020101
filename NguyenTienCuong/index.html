@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <div class="logo-container text-center">
+                <img src="logo.jpg" alt="Pet Shop Logo" class="logo-img">
+                <h1 class="logo-text">Pet Shop</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Quản lý đơn hàng</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="welcome-screen" class="welcome-screen">
+        <img src="slide.webp" alt="Chào mừng đến với Pet Shop!" class="welcome-image">
+    </div>
+    
+
+
+    <div class="container mt-4">
+
+        <div class="container">
+            <h2 class="text-center my-4">Các loại thú cưng</h2>
+        
+          
+            <button id="search-btn" class="btn btn-outline-primary mb-3">
+                🔍 Tìm kiếm
+            </button>
+        
+          
+            <div id="search-container" class="mb-3 d-none">
+                <input type="text" id="search-input" class="form-control" placeholder="Nhập 'chó' hoặc 'mèo' để tìm...">
+            </div>
+        
+            <div class="row" id="pet-list">
+               
+            </div>
+        </div>
+        
+        
+        
+        <div id="message"></div>
+        
+            <tbody id="admin-pet-list">
+               
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center my-4">Các loại thú cưng</h2>
+        <div class="row">
+           
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="anh1.jpg" class="card-img-top" alt="Chó Husky">
+                    <div class="card-body">
+                        <h5 class="card-title">Chó Husky</h5>
+                        <p class="card-text">Thông minh, trung thành.</p>
+                        <p class="card-text"><strong>Giá:</strong> 8.650.000đ</p>
+                        <button onclick='addToCart({id: 1, name: "Chó Husky", price: 8650000})'button class="btn btn-primary">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+    
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="anh2.jpg" class="card-img-top" alt="Mèo Anh Lông Ngắn">
+                    <div class="card-body">
+                        <h5 class="card-title">Mèo Anh Lông Ngắn</h5>
+                        <p class="card-text">Dễ nuôi, lông mềm, hiền lành.</p>
+                        <p class="card-text"><strong>Giá:</strong> 6.990.000đ</p>
+                        <button onclick='addToCart({id: 2, name: "Mèo Anh Lông Ngắn", price: 6990000})'button class="btn btn-primary">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+    
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="anh3.jpg" class="card-img-top" alt="Chó Poodle">
+                    <div class="card-body">
+                        <h5 class="card-title">Chó Poodle</h5>
+                        <p class="card-text">Thông minh, dễ huấn luyện, lông xoăn màu nâu.</p>
+                        <p class="card-text"><strong>Giá:</strong> 10.500.000đ</p>
+                        <button onclick='addToCart({id: 3, name: "Chó Poodle", price: 10500000})'button class="btn btn-primary">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+    
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="anh4.jpg" class="card-img-top" alt="Mèo Cam">
+                    <div class="card-body">
+                        <h5 class="card-title">Mèo Cam</h5>
+                        <p class="card-text">Phá hoại, dễ thương, tai tiếng.</p>
+                        <p class="card-text"><strong>Giá:</strong> 99.999đ</p>
+                        <button onclick='addToCart({id: 4, name: "Mèo Cam", price: 99999})'button class="btn btn-primary">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+    
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="anh5.jpg" class="card-img-top" alt="Chó Corgi">
+                    <div class="card-body">
+                        <h5 class="card-title">Chó Corgi</h5>
+                        <p class="card-text">Chân ngắn đáng yêu, nhanh nhẹn, đíc to.</p>
+                        <p class="card-text"><strong>Giá:</strong> 10.990.000đ</p>
+                        <button onclick='addToCart({id: 5, name: "Chó Corgi", price: 10990000})'button class="btn btn-primary">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+    
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="anh6.jpg" class="card-img-top" alt="Mèo Bengal">
+                    <div class="card-body">
+                        <h5 class="card-title">Mèo Tam Thể</h5>
+                        <p class="card-text"> 3 màu khác nhau, nghịch ngợm.</p>
+                        <p class="card-text"><strong>Giá:</strong> 1.000.000đ</p>
+                        <button onclick='addToCart({id: 3, name: "Mèo Tam Thể", price: 1000000})'button class="btn btn-primary">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="jquery.min.js"></script> 
+    <script src="js/user.js"></script> 
+
+    <footer class="bg-dark text-white pt-4 pb-2">
+        <div class="container text-center">
+            <h4>🐾 Pet Shop - Thế Giới Thú Cưng 🐾</h4>
+            <p>Địa chỉ: 123 Đường JQK, Quận K, TP Hoa Phượng Đỏ</p>
+            <p>Hotline: 0917218282 | Email: petshop@gmail.com</p>
+            <p class="mt-3">&copy; 2025 Pet Shop. hihihi.</p>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
